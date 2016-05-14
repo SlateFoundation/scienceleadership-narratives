@@ -9,7 +9,7 @@
      *
      *    "alternateName": [],
      */
-     
+
      /**
       * The namespace of this package.
       *
@@ -254,5 +254,7 @@
      *          }
      *      }
      */
-    "requires": []
+    "requires": [
+        "slate-sbg"
+    ]
 }
