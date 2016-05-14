@@ -1,5 +1,5 @@
 Ext.define('ScienceLeadership.narratives.overrides.TermReport', {
-    override: 'Slate.model.TermReport',
+    override: 'Slate.model.TermReport'
 }, function(Report) {
     Report.addFields([
         {
