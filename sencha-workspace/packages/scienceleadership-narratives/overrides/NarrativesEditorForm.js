@@ -15,15 +15,10 @@ Ext.define('ScienceLeadership.narratives.overrides.NarrativesEditorForm', {
             fieldLabel: 'Overall Grade',
             labelAlign: 'left',
             store: ['A', 'B', 'C', 'D', 'F', 'inc']
-        },{
-            xtype: 'textarea',
-            anchor: '100%',
-            grow: true,
-            name: 'Assessment',
-            fieldLabel: 'Assessment',
-            labelAlign: 'top'
         }]);
 
         me.callParent(arguments);
+
+        me.down('field[name=Notes]').setFieldLabel('Assessments/Comments');
     }
 });
