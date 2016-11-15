@@ -24,7 +24,9 @@ Ext.define('ScienceLeadership.narratives.overrides.NarrativesEditorForm', {
     ],
     initComponent: function() {
         var me = this;
-        me.items = Ext.Array.insert(Ext.Array.clone(me.items), 2, [
+        me.items = Ext.Array.insert(Ext.Array.filter(Ext.Array.clone(me.items), function(i) {
+            return i.name != 'Notes';
+        }), 2, [
             {
                 xtype: 'combobox',
                 name: 'Grade',
@@ -38,10 +40,25 @@ Ext.define('ScienceLeadership.narratives.overrides.NarrativesEditorForm', {
                     'F',
                     'inc'
                 ]
+            },
+            {
+                xtype: 'fieldcontainer',
+                fieldLabel: 'Assessments / Comments',
+                labelAlign: 'top',
+                layout: 'fit',
+                items: [
+                    {
+                        xtype: 'htmleditor',
+                        name: 'Notes',
+                        enableColors: false,
+                        enableAlignments: false,
+                        enableFont: false,
+                        enableFontSize: false
+                    }
+                ]
             }
         ]);
         me.callParent(arguments);
-        me.down('field[name=Notes]').setFieldLabel('Assessments/Comments');
     }
 });
 
