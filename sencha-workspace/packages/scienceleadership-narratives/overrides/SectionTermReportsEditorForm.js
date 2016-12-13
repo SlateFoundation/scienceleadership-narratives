@@ -1,9 +1,9 @@
-Ext.define('ScienceLeadership.narratives.overrides.NarrativesEditorForm', {
-    override: 'SlateAdmin.view.progress.narratives.EditorForm',
+Ext.define('ScienceLeadership.narratives.overrides.SectionTermReportsEditorForm', {
+    override: 'SlateAdmin.view.progress.terms.EditorForm',
     requires: [
         'Ext.form.field.ComboBox',
         'Ext.form.field.TextArea',
-        'Slate.sbg.overrides.NarrativesSectionsGrid'
+        'Slate.sbg.overrides.TermReportSectionsGrid'
     ],
 
     initComponent: function() {
