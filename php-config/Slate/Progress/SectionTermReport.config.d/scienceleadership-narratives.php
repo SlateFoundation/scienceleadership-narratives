@@ -12,5 +12,3 @@ SectionTermReport::$fields['Grade'] = [
     'values' => ['A', 'B', 'C', 'D', 'F', 'inc'],
     'default' => null
 ];
-
-SectionTermReport::$printTemplate = 'scienceleadership-narratives-report.tpl';
