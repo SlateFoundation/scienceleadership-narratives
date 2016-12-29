@@ -1,5 +1,5 @@
-Ext.define('ScienceLeadership.narratives.overrides.TermReport', {
-    override: 'Slate.model.TermReport'
+Ext.define('ScienceLeadership.narratives.overrides.SectionTermReport', {
+    override: 'Slate.model.progress.SectionTermReport'
 }, function(Report) {
     Report.addFields([
         {
@@ -15,12 +15,12 @@ Ext.define('ScienceLeadership.narratives.overrides.TermReport', {
     ]);
 });
 
-Ext.define('ScienceLeadership.narratives.overrides.NarrativesEditorForm', {
-    override: 'SlateAdmin.view.progress.narratives.EditorForm',
+Ext.define('ScienceLeadership.narratives.overrides.SectionTermReportsEditorForm', {
+    override: 'SlateAdmin.view.progress.terms.EditorForm',
     requires: [
         'Ext.form.field.ComboBox',
         'Ext.form.field.TextArea',
-        'Slate.sbg.overrides.NarrativesSectionsGrid'
+        'Slate.sbg.overrides.TermReportSectionsGrid'
     ],
     initComponent: function() {
         var me = this;
@@ -45,8 +45,8 @@ Ext.define('ScienceLeadership.narratives.overrides.NarrativesEditorForm', {
     }
 });
 
-Ext.define('ScienceLeadership.narratives.overrides.NarrativesStudentsGrid', {
-    override: 'SlateAdmin.view.progress.narratives.StudentsGrid',
+Ext.define('ScienceLeadership.narratives.overrides.SectionTermReportsStudentsGrid', {
+    override: 'SlateAdmin.view.progress.terms.StudentsGrid',
     initComponent: function() {
         var me = this;
         me.columns = Ext.Array.insert(Ext.Array.clone(me.columns), 1, [
