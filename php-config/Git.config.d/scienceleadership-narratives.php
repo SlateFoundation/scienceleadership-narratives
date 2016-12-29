@@ -1,3 +1,5 @@
+<?php
+
 Git::$repositories['scienceleadership-narratives'] = [
     'remote' => 'https://github.com/SlateFoundation/scienceleadership-narratives.git',
     'originBranch' => 'builds/v1',
