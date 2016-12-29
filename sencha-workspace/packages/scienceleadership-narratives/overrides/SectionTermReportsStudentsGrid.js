@@ -1,5 +1,5 @@
-Ext.define('ScienceLeadership.narratives.overrides.NarrativesStudentsGrid', {
-    override: 'SlateAdmin.view.progress.narratives.StudentsGrid',
+Ext.define('ScienceLeadership.narratives.overrides.SectionTermReportsStudentsGrid', {
+    override: 'SlateAdmin.view.progress.terms.StudentsGrid',
 
 
     initComponent: function() {

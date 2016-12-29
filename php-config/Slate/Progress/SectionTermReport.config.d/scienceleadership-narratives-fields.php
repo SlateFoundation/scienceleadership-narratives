@@ -1,13 +1,13 @@
 <?php
 
-namespace Slate\Progress\Narratives;
+namespace Slate\Progress;
 
-Report::$fields['Assessment'] = [
+SectionTermReport::$fields['Assessment'] = [
     'type' => 'clob',
     'default' => null
 ];
 
-Report::$fields['Grade'] = [
+SectionTermReport::$fields['Grade'] = [
     'type' => 'enum',
     'values' => ['A', 'B', 'C', 'D', 'F', 'inc'],
     'default' => null
