@@ -1,4 +1,4 @@
-{extends "progress/section-term-reports/sbg-print.tpl"}
+{extends "sbg/progress/section-term-reports/sbg-print.tpl"}
 
 {template studentreport Report}
     <article class="report">
