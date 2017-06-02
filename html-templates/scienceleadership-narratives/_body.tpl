@@ -7,6 +7,8 @@
             <dd class="grade">{$Report->Grade}</dd>
         </div>
     {/if}
+
+    {$dwoo.parent}
 {/block}
 
 {block comments}
