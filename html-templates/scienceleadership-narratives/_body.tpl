@@ -1,4 +1,4 @@
-{extends "progress/section-term-reports/_body.tpl"}
+{extends "sbg/section-term-reports/_body.tpl"}
 
 {block fields}
     {if $Report->Grade}
