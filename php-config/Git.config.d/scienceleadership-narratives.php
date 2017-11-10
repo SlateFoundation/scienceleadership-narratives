@@ -9,6 +9,7 @@ Git::$repositories['scienceleadership-narratives'] = [
         'html-templates/scienceleadership-narratives/_body.email.tpl',
         'php-config/Git.config.d/scienceleadership-narratives.php',
         'php-config/Slate/Progress/SectionTermReport.config.d/70_scienceleadership-narratives.php',
+        'php-config/SlateAdmin.config.d/scienceleadership-narratives.php',
         'sencha-workspace/packages/scienceleadership-narratives'
     ]
 ];
