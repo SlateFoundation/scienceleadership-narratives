@@ -1771,8 +1771,11 @@ Ext.define('ScienceLeadership.narratives.overrides.SectionTermReportsEditorForm'
 }});
 Ext.define('ScienceLeadership.narratives.overrides.SectionTermReportsStudentsGrid', {override:'SlateAdmin.view.progress.terms.StudentsGrid', initComponent:function() {
   var me = this;
-  me.columns = Ext.Array.insert(Ext.Array.clone(me.columns), 1, [{text:'Grade', dataIndex:'report', emptyCellText:'\x26mdash;', width:70, renderer:function(report) {
-    return report && report.get('Grade') || null;
-  }}]);
+  me.columns = Ext.Array.insert(Ext.Array.clone(me.columns), 1, [{text:'Grade', dataIndex:'report_grade', emptyCellText:'\x26mdash;', width:70}]);
   me.callParent(arguments);
+}});
+Ext.define('Scienceleadership.narratives.overrides.TermsReportController', {override:'SlateAdmin.controller.progress.terms.Report', syncStudent:function(student) {
+  this.callParent(arguments);
+  var report = student.get('report');
+  student.set('report_grade', report ? report.get('Grade') : null, {dirty:false});
 }});
