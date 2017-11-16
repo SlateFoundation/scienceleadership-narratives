@@ -7,12 +7,9 @@ Ext.define('ScienceLeadership.narratives.overrides.SectionTermReportsStudentsGri
 
         me.columns = Ext.Array.insert(Ext.Array.clone(me.columns), 1, [{
             text: 'Grade',
-            dataIndex: 'report',
+            dataIndex: 'report_grade',
             emptyCellText: '&mdash;',
-            width: 70,
-            renderer: function(report) {
-                return report && report.get('Grade') || null;
-            }
+            width: 70
         }]);
 
         me.callParent(arguments);
