@@ -1,7 +1,7 @@
 {extends "sbg/section-term-reports/_body.tpl"}
 
 {block fields}
-    {if $Report->Grade}
+    {if $.get.print.grade != 'no' && $Report->Grade}
         <div class="dli">
             <dt class="grade">Overall Grade</dt>
             <dd class="grade">{$Report->Grade}</dd>
