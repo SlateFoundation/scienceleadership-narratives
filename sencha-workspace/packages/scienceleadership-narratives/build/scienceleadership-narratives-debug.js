@@ -1774,6 +1774,11 @@ Ext.define('ScienceLeadership.narratives.overrides.SectionTermReportsStudentsGri
   me.columns = Ext.Array.insert(Ext.Array.clone(me.columns), 1, [{text:'Grade', dataIndex:'report_grade', emptyCellText:'\x26mdash;', width:70}]);
   me.callParent(arguments);
 }});
+Ext.define('ScienceLeadership.narratives.overrides.TermReportPrintContainer', {override:'SlateAdmin.view.progress.terms.print.Container', initComponent:function() {
+  var me = this;
+  me.callParent(arguments);
+  me.down('fieldset#includeFieldset').add({boxLabel:'Overall Grade', name:'print[grade]', checked:true});
+}});
 Ext.define('Scienceleadership.narratives.overrides.TermsReportController', {override:'SlateAdmin.controller.progress.terms.Report', syncStudent:function(student) {
   this.callParent(arguments);
   var report = student.get('report');
