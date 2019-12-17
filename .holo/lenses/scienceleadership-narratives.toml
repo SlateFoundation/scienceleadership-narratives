@@ -8,6 +8,10 @@ pkg = "scienceleadership-narratives"
 root = "sencha-workspace"
 files = [
     "packages/scienceleadership-narratives/**",
+    "packages/slate-sbg/**",
+    "packages/slate-core-data/**",
+    "packages/emergence-apikit/**",
+    "packages/jarvus-apikit/**",
     "ext/**",
     "workspace.json",
 ]
