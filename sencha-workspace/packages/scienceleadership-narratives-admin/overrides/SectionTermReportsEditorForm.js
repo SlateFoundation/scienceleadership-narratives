@@ -3,7 +3,7 @@ Ext.define('ScienceLeadership.narratives.overrides.SectionTermReportsEditorForm'
     requires: [
         'Ext.form.field.ComboBox',
         'Ext.form.field.TextArea',
-        'Slate.sbg.overrides.TermReportSectionsGrid'
+        'Slate.sbg.admin.overrides.TermReportSectionsGrid'
     ],
 
     initComponent: function() {
