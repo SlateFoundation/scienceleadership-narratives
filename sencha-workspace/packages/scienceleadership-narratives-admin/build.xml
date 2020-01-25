@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<project name="scienceleadership-narratives" default=".help">
+<project name="scienceleadership-narratives-admin" default=".help">
 
     <script language="javascript">
         <![CDATA[

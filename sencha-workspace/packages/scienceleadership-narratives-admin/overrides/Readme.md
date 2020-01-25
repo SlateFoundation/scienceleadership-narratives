@@ -1,3 +1,3 @@
-# scienceleadership-narratives/overrides
+# scienceleadership-narratives-admin/overrides
 
 This folder contains overrides which will automatically be required by package users.

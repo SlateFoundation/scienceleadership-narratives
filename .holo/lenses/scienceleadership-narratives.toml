@@ -2,12 +2,12 @@
 package = "holo/lens-sencha-package"
 
 [hololens.sencha]
-pkg = "scienceleadership-narratives"
+pkg = "scienceleadership-narratives-admin"
 
 [hololens.input]
 root = "sencha-workspace"
 files = [
-    "packages/scienceleadership-narratives/**",
+    "packages/scienceleadership-narratives-admin/**",
     "packages/slate-sbg/**",
     "packages/slate-core-data/**",
     "packages/emergence-apikit/**",
@@ -17,5 +17,5 @@ files = [
 ]
 
 [hololens.output]
-root = "webapp-plugin-builds/scienceleadership-narratives"
+root = "webapp-plugin-builds/scienceleadership-narratives-admin"
 merge = "replace"
