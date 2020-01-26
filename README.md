@@ -1,9 +1,19 @@
 # scienceleadership-narratives
 
-## Release Process
-1. Commit or merge changes into the `master` branch
-2. Run from the root of the repository: `./update-build.sh`
-3. Inspect new commits to `builds/v1` branch
-4. Push `builds/v1` branch: `git push origin builds/v1`
-5. Push tags: `git push --tags`
-6. Add release notes to new tag on GitHub
+Extends term reports with Science Leadership Academy schools' narrative prompts
+
+## Adding to a school site
+
+1. Create `scienceleadership-narratives` source using `master` branch:
+
+    ```bash
+    git holo source create https://github.com/SlateFoundation/scienceleadership-narratives --ref=master
+    ```
+
+1. Create `.holo/branches/emergence-site/_scienceleadership-narratives.toml` to map all content in the `emergence-layer` holobranch into the root of your site projection:
+
+    ```toml
+    [holomapping]
+    holosource="=>emergence-layer"
+    files = "**"
+    ```
